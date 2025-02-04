@@ -1,0 +1,26 @@
+Eliminar rama master y crear rama main
+git branch
+git branch -m master main
+
+Verificar que estamos en la rama main
+git branch
+
+Eliminar la Rama master en GitHub (si ya existe el repo con master)
+Si ya habías subido master a GitHub antes, elimina la rama remota con:
+git push origin --delete master
+
+Crear el Repositorio en GitHub
+Ve a GitHub.
+
+Crea un nuevo repositorio llamado kilian-tatoo (sin inicializar con README.md ni .gitignore).
+
+Copia la URL del repositorio, que será algo como:
+
+https://github.com/Honcito/kilian-tatoo.git
+
+Vincular el Repositorio Remoto
+Ejecuta en la terminal:
+git remote add origin https://github.com/Honcito/kilian-tatoo.git
+
+Verifica la conexión con:
+git remote -v

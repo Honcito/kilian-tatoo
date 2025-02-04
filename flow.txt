@@ -1,0 +1,77 @@
+mkdir kilian-tatoo
+cd kilian-tatoo
+
+npm init -y
+npm install react@18.2.0 react-dom@18.2.0 react-scripts@5.0.1
+
+npm install -D tailwindcss@3.1.8 postcss@8.4.16 autoprefixer@10.4.12
+npx tailwindcss init -p
+
+npm install framer-motion@7.5.2 react-circular-progressbar@2.1.0 react-grid-gallery@1.0.0 react-icons@4.4.0 react-intersection-observer@9.4.0 react-modal-video@1.2.10 react-photo-album@1.16.1 sass@1.55.0 swiper@8.4.2 yet-another-react-lightbox@2.1.1
+
+Abre el archivo tailwind.config.js y reemplázalo con:
+
+js
+Copiar
+Editar
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+En src/index.css, añade:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Crear la Estructura del Proyecto
+
+mkdir public src src/components src/pages
+touch src/index.js src/App.js src/index.css
+
+Edita src/index.js con este contenido:
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+Edita src/App.js:
+
+import React from "react";
+
+function App() {
+  return (
+    <div className="text-center text-2xl font-bold p-10">
+      Bienvenido a Kilian Tattoo
+    </div>
+  );
+}
+
+export default App;
+
+Agregar Scripts en package.json
+Edita tu package.json y asegúrate de que tenga:
+
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
+
+Iniciar el Servidor
+Ejecuta:
+
+npm start
