@@ -45,17 +45,10 @@ export const socialData = [
 ];
 
 export const heroData = {
-<<<<<<< HEAD
-  title: 'I’m Void Sir.',
-  subtitle:
-    'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
-  btnText: 'read more',
-=======
   title: 'Soy Kilian.',
   subtitle:
     'El arte del tatuaje va más allá de la piel. Cada diseño es una huella única, una forma de expresarte y llevar tu esencia contigo.',
   btnText: 'lee más',
->>>>>>> 4867131 (working on Hero.js)
   btnIcon: <IoMdArrowForward />,
 };
 
@@ -70,13 +63,8 @@ export const aboutData = {
 };
 
 export const galleryData = {
-<<<<<<< HEAD
-  title: 'Check my gallery:',
-  btnText: 'View all',
-=======
   title: 'Visita mi Galería:',
   btnText: 'Galería',
->>>>>>> 4867131 (working on Hero.js)
   btnIcon: <IoMdArrowForward />,
   images: [
     {
@@ -132,13 +120,8 @@ export const galleryData = {
 
 export const interviewData = {
   title:
-<<<<<<< HEAD
-    '“Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”',
-  btnText: 'Watch it now',
-=======
     '“Considera lo que deseas. Tu tatuador nunca te dirá qué tatuaje debes tener.”',
   btnText: 'Ver ahora',
->>>>>>> 4867131 (working on Hero.js)
   btnIcon: <FaPlay />,
 };
 
@@ -160,11 +143,7 @@ export const testimonialData = [
 ];
 
 export const contactData = {
-<<<<<<< HEAD
-  title: 'Get in touch with me:',
-=======
   title: 'Contactame:',
->>>>>>> 4867131 (working on Hero.js)
   info: [
     {
       title: 'LA office',
@@ -204,27 +183,16 @@ export const contactData = {
     },
   ],
   form: {
-<<<<<<< HEAD
-    name: 'Write your name here',
-    email: 'Write your email address',
-    message: 'Write your messages here',
-    btnText: 'Send it',
-=======
     name: 'Tu nombre',
     email: 'Tu email',
     message: 'Tu mensaje',
     btnText: 'Enviar',
->>>>>>> 4867131 (working on Hero.js)
   },
 };
 
 export const footerData = {
   about: {
-<<<<<<< HEAD
-    title: 'About void tattoo',
-=======
     title: 'Sobre Kilian tattoo',
->>>>>>> 4867131 (working on Hero.js)
     subtitle:
       'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
     address: {
@@ -243,21 +211,14 @@ export const footerData = {
   links: {
     title: 'Useful links',
     items: [
-<<<<<<< HEAD
-      { href: '/', name: 'About me' },
-      { href: '/', name: 'My gallery' },
-      { href: '/', name: 'My services' },
-      { href: '/', name: 'Contact me' },
-=======
       { href: '/', name: 'Sobre mí' },
       { href: '/', name: 'Mi galería' },
       { href: '/', name: 'Mis servicios' },
       { href: '/', name: 'Contacto' },
->>>>>>> 4867131 (working on Hero.js)
     ],
   },
   program: {
-    title: 'Working Time',
+    title: 'Horario',
     items: [
       { name: 'Mon - Tue / Appointment' },
       { name: 'Wed - Fri / 10:00 - 9:00pm' },
@@ -266,19 +227,11 @@ export const footerData = {
     ],
   },
   newsletter: {
-<<<<<<< HEAD
-    title: 'Newsletter',
-    subtitle:
-      'Elit duis porttitor massa tellus nun in velit arcu posuere integer.',
-    form: {
-      placeholder: 'Your email address',
-=======
     title: 'Noticias',
     subtitle:
       'Elit duis porttitor massa tellus nun in velit arcu posuere integer.',
     form: {
       placeholder: 'Tu email',
->>>>>>> 4867131 (working on Hero.js)
       icon: <FiSend />,
     },
   },

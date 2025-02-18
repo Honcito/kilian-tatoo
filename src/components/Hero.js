@@ -31,13 +31,13 @@ const Hero = () => {
       variants={container} 
       initial='hidden'
       whileInView={'show'}
-      className='container mx-auto bg-pink-200/30 nim-h-[40vh]
+      className='container mx-auto bg-pink-200/30 min-h-[40vh]
       lg:h-full flex items-center justify-center xl:justify-end'>
         {/* text & btn */}
         <div className='text-white text-center lg:text-left
         lg:max-w-[640px]'>
           {/* text */}
-          <h1 className='h1'>{title}</h1>
+          <motion.h1 variants={fadeIn('down')} className='h1'>{title}</motion.h1>
           <p className='mb-8 lag:mb-16 max-w-lg leading-relaxed'>{subtitle}</p>
           {/* btn */}
           <div>
