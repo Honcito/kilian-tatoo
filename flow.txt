@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 mkdir kilian-tatoo
 cd kilian-tatoo
 
@@ -75,3 +76,8 @@ Iniciar el Servidor
 Ejecuta:
 
 npm start
+=======
+npm install
+npm start
+
+>>>>>>> 4867131 (working on Hero.js)
