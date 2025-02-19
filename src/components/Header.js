@@ -9,62 +9,66 @@ import Socials from "./Socials";
 import { TiThMenuOutline } from "react-icons/ti";
 
 const Header = () => {
-  // destructure headerdata
+  // destructure headerData
   const { logo } = headerData;
   // header state
   const [isActive, setIsActive] = useState(false);
-  // nave mobile state
+  // nav mobile state
   const [navMobile, setNavMobile] = useState(false);
+
   // scroll event
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
-    });
-  });
+    const handleScroll = () => {
+      setIsActive(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header
       className={`${
-        isActive
-          ? "h-[100px] lg:h-[110px] shadow-lg"
-          : "h-[120px] lg:h-[150px]"
-      } fixed bg-white left-0 right-0 z-10 max-w-[1920px]
-		w-full mx-auto transition-all duration-300`}
+        isActive ? "h-[100px] lg:h-[110px] shadow-lg" : "h-[120px] lg:h-[150px]"
+      } fixed bg-white left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
-      <div
-        className="flex justify-between items-center
-		h-full pl-[50px] pr-[60px]"
-      >
-        {/* logo */}
+      <div className="flex justify-between items-center h-full px-6 lg:px-[60px]">
+        {/* Logo */}
         <a href="/">
-          <img className="w-[210px] h-[100px]" src={logo} alt="" />
+          <img className="w-[110px] h-auto" src={logo} alt="Logo" />
         </a>
-        {/* nav - initially hidden - show on desktop */}
-        <div className='hidden xl:flex w-full justify-between items-center'>
-          {/* menú de navegación centrado */}
-          <div className='flex-grow flex justify-center'>
-          <Nav />
+
+        {/* Desktop Navigation */}
+        <div className="hidden xl:flex w-full justify-between items-center">
+          <div className="flex-grow flex justify-center">
+            <Nav />
           </div>
-          {/* nav menu btn - showing by default - hidden on desktop  mode */}
-          <div onClick={() => setNavMobile(!navMobile)}
-           className="xl:hidden absolute right-[5%] bg-dark 
-           text-white p-2 rounded-md cursor-pointer">
-            <TiThMenuOutline className="text-3xl" />
-          </div>
-          {/* nav mobile -showing by default - hidden on desktop */}
-          <div className={`${navMobile ? 'max-h-full' :
-          'max-h-0'} ${
-          isActive
-          ? 'top-[100px] lg:top-[110px]'
-          : 'top-[120px] lg:top-[150px]'
-          } fixed bg-white w-full h-full left-0 -z-10
-          transition-all duration-300`}>
-            <NavMobile />
-          </div>
-          {/* social icons - initially hidden - show on desktop */}
-          <div className='hidden xl:flex'>
-            <Socials/>
+          <div className="hidden xl:flex">
+            <Socials />
           </div>
         </div>
+
+        {/* Mobile Navigation Button */}
+        <div className="xl:hidden">
+          <button
+            onClick={() => setNavMobile(!navMobile)}
+            className="bg-dark text-white p-2 rounded-md cursor-pointer z-20 relative"
+          >
+            <TiThMenuOutline className="text-3xl" />
+          </button>
+        </div>
+      </div>
+
+      {/* Menú móvil desplegable */}
+      <div
+        className={`xl:hidden fixed top-[100px] w-full bg-white transition-all duration-300 ${
+          navMobile ? "h-screen opacity-100 visible" : "h-0 opacity-0 invisible"
+        }`}
+      >
+        <NavMobile />
       </div>
     </header>
   );
