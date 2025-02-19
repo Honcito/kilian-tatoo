@@ -1,5 +1,5 @@
 // import images
-import Logo from '../src/img/header/logo.svg';
+import Logo from '../src/img/header/kilian-logo.svg';
 import GalleryImg1 from '../src/img/gallery/1.png';
 import GalleryImg2 from '../src/img/gallery/2.png';
 import GalleryImg3 from '../src/img/gallery/3.png';
@@ -27,12 +27,12 @@ export const headerData = {
 
 export const navData = {
   items: [
-    { href: '/', name: 'Home' },
-    { href: '/', name: 'About' },
-    { href: '/', name: 'Gallery' },
-    { href: '/', name: 'Interview' },
-    { href: '/', name: 'Articles' },
-    { href: '/', name: 'Contact' },
+    { href: '/', name: 'Inicio' },
+    { href: '/', name: 'Sobre mí' },
+    { href: '/', name: 'Galería' },
+    { href: '/', name: 'Testimonios' },
+    { href: '/', name: 'Artículos' },
+    { href: '/', name: 'Contacto' },
   ],
 };
 
