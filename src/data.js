@@ -8,6 +8,10 @@ import GalleryImg5 from '../src/img/gallery/5.png';
 import GalleryImg6 from '../src/img/gallery/6.png';
 import GalleryImg7 from '../src/img/gallery/7.png';
 import GalleryImg8 from '../src/img/gallery/8.png';
+import GalleryImg9 from '../src/img/gallery/9.png';
+import GalleryImg10 from '../src/img/gallery/10.png';
+import GalleryImg11 from '../src/img/gallery/11.png';
+import GalleryImg12 from '../src/img/gallery/12.png';
 import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
@@ -63,8 +67,8 @@ export const aboutData = {
 };
 
 export const galleryData = {
-  title: 'Visita mi Galería:',
-  btnText: 'Galería',
+  title: "Galería:",
+  btnText: "Galería",
   btnIcon: <IoMdArrowForward />,
   images: [
     {
@@ -106,14 +110,38 @@ export const galleryData = {
     {
       src: GalleryImg7,
       original: GalleryImg7,
-      width: 465,
-      height: 540,
+      width: 540,
+      height: 412,
     },
     {
       src: GalleryImg8,
       original: GalleryImg8,
       width: 465,
       height: 412,
+    },
+    {
+      src: GalleryImg9,
+      original: GalleryImg9,
+      width: 465,
+      height: 600,
+    },
+    {
+      src: GalleryImg10,
+      original: GalleryImg10,
+      width: 465,
+      height: 600,
+    },
+    {
+      src: GalleryImg11,
+      original: GalleryImg11,
+      width: 465,
+      height: 600,
+    },
+    {
+      src: GalleryImg12,
+      original: GalleryImg12,
+      width: 400,
+      height: 500,
     },
   ],
 };
