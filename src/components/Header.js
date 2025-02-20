@@ -32,13 +32,13 @@ const Header = () => {
   return (
     <header
       className={`${
-        isActive ? "h-[100px] lg:h-[110px] shadow-lg" : "h-[120px] lg:h-[150px]"
+        isActive ? "h-[180px] lg:h-[110px] shadow-lg" : "h-[120px] lg:h-[150px]"
       } fixed bg-white left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
       <div className="flex justify-between items-center h-full px-6 lg:px-[60px]">
         {/* Logo */}
         <a href="/">
-          <img className="w-[110px] h-auto" src={logo} alt="Logo" />
+          <img className="w-[90px] h-auto" src={logo} alt="Logo" />
         </a>
 
         {/* Desktop Navigation */}
