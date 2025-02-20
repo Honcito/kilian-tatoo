@@ -1,0 +1,10 @@
+npm install --global surge
+surge
+npm run build
+surge ./build kilian-tattoo.surge.sh
+https://kilian-tattoo.surge.sh
+
+Si se realizan cambios ejecutar de nuevo
+npm run build
+surge ./build kilian-tattoo.surge.sh
+https://kilian-tattoo.surge.sh

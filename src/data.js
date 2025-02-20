@@ -12,6 +12,7 @@ import GalleryImg9 from '../src/img/gallery/9.png';
 import GalleryImg10 from '../src/img/gallery/10.png';
 import GalleryImg11 from '../src/img/gallery/11.png';
 import GalleryImg12 from '../src/img/gallery/12.png';
+import GalleryImg13 from '../src/img/gallery/13.png';
 import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
@@ -57,12 +58,12 @@ export const heroData = {
 };
 
 export const aboutData = {
-  title: 'My Story:',
+  title: 'Sobre mí:',
   subtitle1:
     'In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.',
   subtitle2:
     'Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.',
-  btnText: 'Know more',
+  btnText: 'Conóce más',
   btnIcon: <IoMdArrowForward />,
 };
 
@@ -74,49 +75,49 @@ export const galleryData = {
     {
       src: GalleryImg1,
       original: GalleryImg1,
-      width: 465,
-      height: 412,
+      width: 400,
+      height: 700,
     },
     {
       src: GalleryImg2,
       original: GalleryImg2,
-      width: 465,
-      height: 540,
+      width: 400,
+      height: 700,
     },
     {
       src: GalleryImg3,
       original: GalleryImg3,
-      width: 465,
-      height: 412,
+      width: 500,
+      height: 700,
     },
     {
       src: GalleryImg4,
       original: GalleryImg4,
-      width: 465,
-      height: 540,
+      width: 400,
+      height: 700,
     },
     {
       src: GalleryImg5,
       original: GalleryImg5,
-      width: 465,
-      height: 540,
+      width: 400,
+      height: 700,
     },
     {
       src: GalleryImg6,
       original: GalleryImg6,
-      width: 464,
-      height: 412,
+      width: 400,
+      height: 700,
     },
     {
       src: GalleryImg7,
       original: GalleryImg7,
-      width: 540,
+      width: 400,
       height: 412,
     },
     {
       src: GalleryImg8,
       original: GalleryImg8,
-      width: 465,
+      width: 400,
       height: 412,
     },
     {
@@ -128,18 +129,24 @@ export const galleryData = {
     {
       src: GalleryImg10,
       original: GalleryImg10,
-      width: 465,
-      height: 600,
+      width: 400,
+      height: 700,
     },
     {
       src: GalleryImg11,
       original: GalleryImg11,
-      width: 465,
-      height: 600,
+      width: 650,
+      height: 800,
     },
     {
       src: GalleryImg12,
       original: GalleryImg12,
+      width: 400,
+      height: 500,
+    },
+    {
+      src: GalleryImg13,
+      original: GalleryImg13,
       width: 400,
       height: 500,
     },
@@ -171,7 +178,7 @@ export const testimonialData = [
 ];
 
 export const contactData = {
-  title: 'Contactame:',
+  title: 'Contácto:',
   info: [
     {
       title: 'LA office',
