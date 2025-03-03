@@ -1,0 +1,11 @@
+# Exported from Render on 2025-03-03T17:58:35Z
+services:
+- type: web
+  name: kilian-tatoo
+  runtime: node
+  repo: https://github.com/Honcito/kilian-tatoo
+  plan: free
+  region: oregon
+  buildCommand: npm run build
+  startCommand: npm run start
+version: "1"
